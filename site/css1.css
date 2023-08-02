@@ -1,0 +1,136 @@
+*{
+	margin: 0;
+	padding: 0;
+font-family: 'Borel', cursive;
+font-family: 'Handjet', cursive;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Ubuntu', sans-serif;
+}
+
+.main_box{
+	background: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwallpapercave.com%2Fwp%2FntYEFqo.jpg&f=1&nofb=1&ipt=3e8de0034f6f1b6fb52fc368d4df0d09700f8889655698d9c139bff8c171dd26&ipo=images");
+	height: 100vh;
+	background-size: cover;	
+}
+
+.butt_one i{
+	color: white;
+	font-size: 30px;
+	font-weight: 700;
+	position: absolute;
+	left: 18px;
+	line-height: 60px;
+	cursor: pointer; 
+	transition: all 0.3s linear;	
+}
+
+.sidebar{
+	position: fixed;
+	left: -300px;
+	height: 100vh;
+	width: 250px;
+	background-color: rgba(255, 255, 255, 0.1);
+	box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+	transition: all 0.3s linear;
+}
+
+.sidebar .logo{
+	position: absolute;
+	width: 100%;
+	line-height: 60px;
+	box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+	height: 60px;
+}
+
+.sidebar .logo a{
+	position: absolute;
+	left: 55px;
+	color: white;
+	text-decoration: none;
+	font-size: 25px;
+	font-weight: 500;
+
+}
+
+.sidebar .butt_two i{
+	color: grey;
+	font-size: 20px;
+	line-height: 60px;
+	position: absolute;
+	left: 210px;
+	opacity: 0;
+	cursor: pointer;
+	transition: all 0.3s linear;	
+
+}
+
+.sidebar .menu{
+	position: absolute;
+	width: 100%;
+	color: white;
+	top: 70px;
+}
+
+.sidebar .menu li{
+	margin: 5px;
+	padding: 10px 20px;
+}
+
+.sidebar .menu i,a{
+	color: white;
+	text-decoration: none;
+}
+
+.sidebar .menu i{
+	padding-right: 5px;
+}
+
+.sidebar .socials{
+	color: white;
+	position: absolute;
+	left: 25%;
+	bottom: 50px;
+/*	opacity: 0.5;*/
+}
+
+.sidebar .socials i{
+	opacity: 0.5;
+	padding: 0 5px;
+}
+
+#check{
+	display: none;
+}
+
+.sidebar .menu li:hover{
+	box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+
+}
+
+.butt_one i:hover{
+	font-size: 40px;
+}
+
+.butt_two i:hover{
+	font-size: 30px;
+}
+
+.sidebar .socials i:hover{
+	font-size: 30px;
+	opacity: 1;
+	transform: scale(1.1);
+}
+
+#check:checked ~ .sidebar{
+	left: 0;
+}
+
+#check:checked ~ .butt_one i{
+	opacity: 0;
+}
+
+#check:checked ~ .sidebar .butt_two i{
+	opacity: 1;
+	color: gold;
+
+}
